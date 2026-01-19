@@ -64,7 +64,7 @@ class MainWindow(QMainWindow):
     isFishing: bool = False
     tryCatchFish: bool = False
     startThisTry: float = 0
-    maxTimeForWait: int = 70
+    maxTimeForWait: int = 240
     startFishingTimer: float = 0
     startCheckMealTimer: float = 0
     checkMealTimer: int = 0
