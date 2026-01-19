@@ -188,7 +188,7 @@ class MainWindow(QMainWindow):
                 elif (self.checkMealTimer >= self.settingsWindow.mealTimer) and (self.settingsWindow.useMeal):
                     keyboard.press_and_release(f"{self.settingsWindow.mealKey}")
                     pyautogui.click(button = "left")
-                    time.sleep(0.75)
+                    time.sleep(2.5)
                     keyboard.press_and_release(f"{self.settingsWindow.rodKey}")
                     pyautogui.click(button = "left")
                     self.logsWindow.logs.append([time.localtime(), "consumeMeal"])
@@ -198,7 +198,7 @@ class MainWindow(QMainWindow):
                     keyboard.press_and_release(f"{self.settingsWindow.potionKey}")
                     if self.settingsWindow.potionKey != "e":
                         pyautogui.click(button = "left")
-                        time.sleep(0.75)
+                        time.sleep(2.5)
                         keyboard.press_and_release(f"{self.settingsWindow.rodKey}")
                         pyautogui.click(button = "left")
                     self.logsWindow.logs.append([time.localtime(), "consumePotion"])
